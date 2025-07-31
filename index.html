@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IV Semester Grade Sheet for Gopi Nath from SVCE, Department of CSE">
+    <title>IV Semester Grade Sheet</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #2E4372;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            margin: 20px 0 10px;
+        }
+
+        hr {
+            border: 1px solid #2E4372;
+            margin: 20px 0;
+        }
+
+        .info p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        caption {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        thead th {
+            background-color: #2E4372;
+            color: white;
+            padding: 12px;
+        }
+
+        tbody td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #eef3f8;
+            transition: 0.3s ease;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2E4372;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            table thead {
+                display: none;
+            }
+
+            table, tbody, tr, td {
+                display: block;
+                width: 100%;
+            }
+
+            tbody td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            tbody td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                color: #333;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sri Venkateswara College of Engineering</h1>
+    <h2>Department of Computer Science and Engineering</h2>
+    <h3>IV Semester Grade Sheet</h3>
+    <hr>
+
+    <div class="info">
+        <p><strong>Name:</strong> Gopi Nath</p>
+        <p><strong>Register Number:</strong> 2127230501043</p>
+        <p><strong>Semester:</strong> IV</p>
+        <p><strong>Academic Year:</strong> 2024–2025</p>
+    </div>
+
+    <table>
+        <caption>Subjects and Grades</caption>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="S.No">1</td>
+                <td data-label="Subject Code">CS22401</td>
+                <td data-label="Subject Name">Operating Systems</td>
+                <td data-label="Grade" class="highlight">A+</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">2</td>
+                <td data-label="Subject Code">CS22402</td>
+                <td data-label="Subject Name">Machine Learning Techniques</td>
+                <td data-label="Grade" class="highlight">A</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">3</td>
+                <td data-label="Subject Code">CS22403</td>
+                <td data-label="Subject Name">Design and Analysis of Algorithm</td>
+                <td data-label="Grade" class="highlight">A+</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">4</td>
+                <td data-label="Subject Code">CS22409</td>
+                <td data-label="Subject Name">Java Programming: Theory</td>
+                <td data-label="Grade" class="highlight">B+</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">5</td>
+                <td data-label="Subject Code">CS22411</td>
+                <td data-label="Subject Name">Operating Systems Laboratory</td>
+                <td data-label="Grade" class="highlight">O</td>
+            </tr>
+            <tr>
+                <td data-label="S.No">6</td>
+                <td data-label="Subject Code">CS22412</td>
+                <td data-label="Subject Name">AI and ML Laboratory</td>
+                <td data-label="Grade" class="highlight">A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Grading Scale</h4>
+    <ul>
+        <li><strong>O</strong> – Outstanding</li>
+        <li><strong>A+</strong> – Excellent</li>
+        <li><strong>A</strong> – Very Good</li>
+        <li><strong>B+</strong> – Good</li>
+        <li><strong>B</strong> – Average</li>
+    </ul>
+
+    <p>
+        <span class="highlight">Total Credits Earned:</span> 24<br />
+        <span class="highlight">GPA:</span> <i>8.73</i><br />
+        <span class="highlight">CGPA:</span> <i>8.55</i>
+    </p>
+
+    <p style="margin-top: 15px;">
+        For detailed syllabus, visit:
+        <a href="https://www.svce.ac.in/departments/cse/" target="_blank" rel="noopener noreferrer">
+            SVCE CSE Department
+        </a>
+    </p>
+
+    <div class="footer">
+        &copy; 2025 Sri Venkateswara College of Engineering. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>

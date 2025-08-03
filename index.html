@@ -1,235 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IV Semester Grade Sheet for Gopi Nath from SVCE, Department of CSE">
-    <title>IV Semester Grade Sheet</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Degree Examination Grade Sheet</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #e0eafc, #cfdef3);
-            color: #2E4372;
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-        }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f0f2f5;
+      padding: 20px;
+    }
 
-        .container {
-            background-color: white;
-            padding: 40px;
-            max-width: 900px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
+    .container {
+      background: white;
+      max-width: 960px;
+      margin: auto;
+      border: 2px solid #222;
+      padding: 30px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-        h1, h2, h3 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    header {
+      text-align: center;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
 
-        h4 {
-            margin: 20px 0 10px;
-        }
+    header h1 {
+      font-size: 22px;
+      color: #b22222;
+      text-transform: uppercase;
+    }
 
-        hr {
-            border: 1px solid #2E4372;
-            margin: 20px 0;
-        }
+    header h2 {
+      font-size: 16px;
+      color: green;
+      font-weight: normal;
+    }
 
-        .info p {
-            margin: 8px 0;
-            font-size: 16px;
-        }
+    .photo {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 120px;
+      height: 150px;
+      border: 1px solid #000;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-        }
+    .section {
+      margin-bottom: 20px;
+    }
 
-        caption {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+    .section h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+      border-bottom: 1px solid #888;
+      padding-bottom: 5px;
+    }
 
-        thead th {
-            background-color: #2E4372;
-            color: white;
-            padding: 12px;
-        }
+    .info p {
+      line-height: 1.6;
+    }
 
-        tbody td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: center;
-            font-size: 15px;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-        tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
 
-        tbody tr:hover {
-            background-color: #eef3f8;
-            transition: 0.3s ease;
-        }
+    th {
+      background-color: #f2f2f2;
+    }
 
-        .highlight {
-            font-weight: bold;
-            color: #2E4372;
-        }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
 
-        ul {
-            margin-left: 30px;
-            margin-bottom: 20px;
-        }
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-weight: bold;
+    }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+    .print-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #888;
-        }
-
-        @media screen and (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            table thead {
-                display: none;
-            }
-
-            table, tbody, tr, td {
-                display: block;
-                width: 100%;
-            }
-
-            tbody td {
-                text-align: right;
-                padding-left: 50%;
-                position: relative;
-            }
-
-            tbody td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                font-weight: bold;
-                color: #333;
-                text-align: left;
-            }
-        }
-    </style>
+    @media print {
+      .print-btn {
+        display: none;
+      }
+      body {
+        background: white;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="gopinath.jpg" alt="Student Photo" class="photo" />
 
-<div class="container">
-    <h1>Sri Venkateswara College of Engineering</h1>
-    <h2>Department of Computer Science and Engineering</h2>
-    <h3>IV Semester Grade Sheet</h3>
-    <hr>
+    <header>
+      <h1>Sri Venkateswara College of Engineering</h1>
+      <h2>Pennalur, Sriperumbudur Tk. 602117</h2>
+      <h3>DEGREE EXAMINATION - GRADE SHEET</h3>
+    </header>
 
-    <div class="info">
-        <p><strong>Name:</strong> Gopi Nath</p>
-        <p><strong>Register Number:</strong> 2127230501043</p>
-        <p><strong>Semester:</strong> IV</p>
-        <p><strong>Academic Year:</strong> 2024–2025</p>
+    <div class="section info">
+      <p><b>Folio Number:</b> 218056148437</p>
+      <p><b>UMIS No:</b> 2303212710421043</p>
+      <p><b>Date of Publication:</b> 10/01/2025</p>
+      <p><b>Name of the Student:</b> Gopinath A</p>
+      <p><b>Date of Birth:</b> 21-08-2005</p>
+      <p><b>Gender:</b> Male</p>
+      <p><b>Registration No:</b> 2127230501043</p>
+      <p><b>Programme & Branch:</b> B.E. Computer Science and Engineering</p>
+      <p><b>Month & Year of Examination:</b> DEC-24</p>
+      <p><b>Regulation:</b> 2022</p>
+      <p><b>Semester:</b> III</p>
     </div>
 
-    <table>
-        <caption>Subjects and Grades</caption>
+    <div class="section">
+      <h3>Course Details</h3>
+      <table>
         <thead>
-            <tr>
-                <th>S.No</th>
-                <th>Subject Code</th>
-                <th>Subject Name</th>
-                <th>Grade</th>
-            </tr>
+          <tr>
+            <th>Semester</th>
+            <th>Course Code</th>
+            <th>Name of the Course</th>
+            <th>Credit</th>
+            <th>Grade</th>
+            <th>Result</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td data-label="S.No">1</td>
-                <td data-label="Subject Code">CS22401</td>
-                <td data-label="Subject Name">Operating Systems</td>
-                <td data-label="Grade" class="highlight">A+</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">2</td>
-                <td data-label="Subject Code">CS22402</td>
-                <td data-label="Subject Name">Machine Learning Techniques</td>
-                <td data-label="Grade" class="highlight">A</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">3</td>
-                <td data-label="Subject Code">CS22403</td>
-                <td data-label="Subject Name">Design and Analysis of Algorithm</td>
-                <td data-label="Grade" class="highlight">A+</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">4</td>
-                <td data-label="Subject Code">CS22409</td>
-                <td data-label="Subject Name">Java Programming: Theory</td>
-                <td data-label="Grade" class="highlight">B+</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">5</td>
-                <td data-label="Subject Code">CS22411</td>
-                <td data-label="Subject Name">Operating Systems Laboratory</td>
-                <td data-label="Grade" class="highlight">O</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">6</td>
-                <td data-label="Subject Code">CS22412</td>
-                <td data-label="Subject Name">AI and ML Laboratory</td>
-                <td data-label="Grade" class="highlight">A</td>
-            </tr>
+          <tr><td>03</td><td>AD22301</td><td>ARTIFICIAL INTELLIGENCE</td><td>3</td><td>A</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22301</td><td>DATABASE MANAGEMENT SYSTEMS</td><td>3</td><td>A+</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22302</td><td>DATAMINING AND DATA WAREHOUSE</td><td>3</td><td>A</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22303</td><td>DATA STRUCTURES</td><td>3</td><td>A</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22304</td><td>MICROPROCESSOR AND COMPUTER ARCHITECTURE</td><td>3</td><td>A</td><td>P</td></tr>
+          <tr><td>03</td><td>MA22353</td><td>DISCRETE MATHEMATICS</td><td>4</td><td>A+</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22311</td><td>DBMS LABORATORY</td><td>1.5</td><td>A+</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22312</td><td>DATA STRUCTURES LABORATORY</td><td>1.5</td><td>A+</td><td>P</td></tr>
+          <tr><td>03</td><td>CS22313</td><td>MICROPROCESSOR LABORATORY</td><td>1.5</td><td>A</td><td>P</td></tr>
         </tbody>
-    </table>
+      </table>
+    </div>
 
-    <h4>Grading Scale</h4>
-    <ul>
-        <li><strong>O</strong> – Outstanding</li>
-        <li><strong>A+</strong> – Excellent</li>
-        <li><strong>A</strong> – Very Good</li>
-        <li><strong>B+</strong> – Good</li>
-        <li><strong>B</strong> – Average</li>
-    </ul>
-
-    <p>
-        <span class="highlight">Total Credits Earned:</span> 24<br />
-        <span class="highlight">GPA:</span> <i>8.73</i><br />
-        <span class="highlight">CGPA:</span> <i>8.55</i>
-    </p>
-
-    <p style="margin-top: 15px;">
-        For detailed syllabus, visit:
-        <a href="https://www.svce.ac.in/departments/cse/" target="_blank" rel="noopener noreferrer">
-            SVCE CSE Department
-        </a>
-    </p>
+    <div class="section">
+      <h3>Semester Summary</h3>
+      <table>
+        <tr>
+          <th>Curriculum Semester</th>
+          <th>Credit Registered</th>
+          <th>Credit Earned</th>
+          <th>Grade Point Earned</th>
+          <th>Grade Point Average</th>
+        </tr>
+        <tr>
+          <td>III</td>
+          <td>23.50</td>
+          <td>23.50</td>
+          <td>199.75</td>
+          <td>8.50</td>
+        </tr>
+      </table>
+    </div>
 
     <div class="footer">
-        &copy; 2025 Sri Venkateswara College of Engineering. All rights reserved.
+      <p><b>Cumulative Credit Earned:</b> 94.50</p>
+      <p><b>Cumulative Grade Point Average:</b> 8.40 (Target Approximation)</p>
+      <p><b>Medium of Instruction:</b> English</p>
+      <p><b>Note:</b> R - Reappear, RA - Absent, RW - Withdrawn</p>
+      <p><b>Date:</b> 04/04/2025 &nbsp;&nbsp;&nbsp; <b>Place:</b> Sriperumbudur Tk. 602117</p>
     </div>
-</div>
 
+    <div class="signature">CONTROLLER OF EXAMINATIONS</div>
+
+    <div class="center">
+      <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+    </div>
+  </div>
 </body>
 </html>
